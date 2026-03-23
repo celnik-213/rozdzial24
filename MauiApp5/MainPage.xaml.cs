@@ -5,7 +5,7 @@
         public MainPage()
         {
             InitializeComponent();
-        }
+            }
 
             private async void OnZapiszTekstClicked(object sender, EventArgs e)
             {
