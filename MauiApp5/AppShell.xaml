@@ -18,6 +18,12 @@
         ContentTemplate="{DataTemplate local:NewPage1}"
         Route="MainPage" />
         </Tab>
+        <Tab Title="24.4">
+            <ShellContent
+                Title="24.4"
+                ContentTemplate="{DataTemplate local:NewPage2}"
+                Route="MainPage" />
+        </Tab>
     </TabBar>
 
 </Shell>
