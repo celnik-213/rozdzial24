@@ -11,6 +11,7 @@
             {
             string sciezka = Path.Combine(FileSystem.Current.AppDataDirectory, "moj_plik.txt");
             string tresc = ZapisEntry.Text;
+            ZapisEntry.Text = string.Empty;
 
             await File.WriteAllTextAsync(sciezka, tresc);
             await DisplayAlert("Zapisano", "Notatka jest zapisana", "OK");

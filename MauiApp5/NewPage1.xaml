@@ -5,8 +5,29 @@
              Title="NewPage1">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Mój dziennik"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Editor
+            x:Name="EditorWpis"
+            Placeholder="Wpisz tutaj co myślisz!"/>
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+            <Button
+            x:Name="DodajWpis"
+            Text="Dodaj wpis"
+            Clicked="OnZapiszTekstClicked"
+            BackgroundColor="Green"/>
+        <Button
+            x:Name="UsunHistorie"
+            Text="Usuń Historię przeglądania"
+            Clicked="OnUsunTekstCilcked"
+            Background="Red"/>
+        </HorizontalStackLayout>
+        <ScrollView>
+            <Label
+                x:Name="Hisotria"
+                Text=""/>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>
